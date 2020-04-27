@@ -1,1 +1,1 @@
-npm run-script build && mv build/* ./
+npm run-script build && rm -rf ./static && mv build/* ./ -f
