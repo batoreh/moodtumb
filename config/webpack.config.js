@@ -520,6 +520,7 @@ module.exports = function(webpackEnv) {
           isEnvProduction
             ? {
                 base: "http://netoguimaraes.github.io/moodtumb/",
+                title: "awkcred moodtumb",
                 minify: {
                   removeComments: true,
                   collapseWhitespace: true,
