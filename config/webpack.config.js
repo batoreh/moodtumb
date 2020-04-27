@@ -515,11 +515,11 @@ module.exports = function(webpackEnv) {
           {
             inject: true,
             template: paths.appHtml,
-            base: "http://netoguimaraes.github.io/moodtumb/",
             title: "awkcred moodtumb"
           },
           isEnvProduction
             ? {
+                base: "http://netoguimaraes.github.io/moodtumb/",
                 minify: {
                   removeComments: true,
                   collapseWhitespace: true,

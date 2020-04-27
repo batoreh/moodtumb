@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Pic from './Pic';
 import flatten from 'lodash.flatten';
 import 'masonry-layout';
 import Masonry from 'react-masonry-css';
@@ -46,13 +47,7 @@ const Gallerie = (props) => {
                 breakpointCols={columns}
                 className="my-masonry-grid"
                 columnClassName="my-masonry-grid_column">
-                {pics.map(pic => 
-                    <img
-                        className='pic'
-                        data-caman='brightness(10) contrast(30) sepia(60) saturation(-30)'
-                        key={pic}
-                        src={pic} />
-                )}
+                {pics.map(Pic)}
             </Masonry>
         </div>
     )
