@@ -1,1 +1,1 @@
-npm run-script build && mv dist/* ./
+npm run-script build && mv build/* ./
